@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "674886c6f3994dcc21ebee4e",
+    "name": "Americano Coffee",
+    "quantity": "90",
+    "supplier": " Cappu Authorizer",
+    "taste": "Sweet and hot",
+    "category": "Americano ",
+    "price": "890 ",
+    "details": "Espresso with hot water",
+    "photo": "https://i.ibb.co.com/170Zm9W/5.png"
+  },
+  {
+    "_id": "6748892730638a5a5f120ebf",
+    "name": "Black Coffee",
+    "quantity": "80",
+    "supplier": " Cappu Authorizer",
+    "taste": "Sweet and hot",
+    "category": "Black",
+    "price": "890 ",
+    "details": "Espresso with hot water",
+    "photo": "https://i.ibb.co.com/3yLVKc2/6.png"
+  },
+  {
+    "_id": "6748897a30638a5a5f120ec0",
+    "name": "Espresso Coffee",
+    "quantity": "70",
+    "supplier": " Cappu Authorizer",
+    "taste": "Sweet and hot",
+    "category": "Espresso Special",
+    "price": "890 ",
+    "details": "Espresso with hot water",
+    "photo": "https://i.ibb.co.com/82jCkS1/3.png"
+  },
+  {
+    "_id": "674889b930638a5a5f120ec1",
+    "name": "Cappuccino Coffee",
+    "quantity": "60",
+    "supplier": " Cappu Authorizer",
+    "taste": "Sweet and hot",
+    "category": "Cappuccino ",
+    "price": "900",
+    "details": "Cappuccino With Hot Water",
+    "photo": "https://i.ibb.co.com/cg3WjkV/2.png"
+  },
+  {
+    "_id": "67488a0330638a5a5f120ec2",
+    "name": "Macchiato ",
+    "quantity": "40",
+    "supplier": " Cappu Authorizer",
+    "taste": "Sweet and hot",
+    "category": "Black",
+    "price": "1200",
+    "details": "Espresso with hot water",
+    "photo": "https://i.ibb.co.com/pvXtWDC/1.png"
+  },
+  {
+    "_id": "67488a4330638a5a5f120ec3",
+    "name": "Black Coffee",
+    "quantity": "30",
+    "supplier": " Cappu Authorizer",
+    "taste": "Sweet and hot",
+    "category": "Black",
+    "price": "500",
+    "details": "Espresso with hot water",
+    "photo": "https://i.ibb.co.com/PZ0D0JF/4.png"
+  }
+]
