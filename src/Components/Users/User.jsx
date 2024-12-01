@@ -12,7 +12,7 @@ const User = ({ user, setUsers, users }) => {
     // delete user 
     const handleDelete = () => {
         const handleFetch = async () => {
-            const res = await fetch(`http://localhost:5000/users/${_id}`, {
+            const res = await fetch(`https://espresso-emporium-seven.vercel.app/users/${_id}`, {
                 method: "DELETE"
             });
             const data = await res.json();

@@ -9,7 +9,7 @@ const UpdateUser = () => {
     const [user, setUser] = useState(loadedUser);
     const navigate = useNavigate();
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/users/${param.id}`)
+    //     fetch(`https://espresso-emporium-seven.vercel.app/users/${param.id}`)
     //         .then(res => res.json())
     //         .then(data => setUser(data));
     // }, [param.id])
@@ -23,7 +23,7 @@ const UpdateUser = () => {
         const createdAt = form.get('createdAt');
         console.log({ name, photoURL, email, createdAt:user.createdAt });
 
-        fetch(`http://localhost:5000/users/${param.id}`,{
+        fetch(`https://espresso-emporium-seven.vercel.app/users/${param.id}`,{
             method: 'PUT',
             headers: {
                 'content-type' : 'application/json'

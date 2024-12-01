@@ -29,7 +29,7 @@ const UpdateCoffeeForm = () => {
             return;
         }
         const fetchData = async () => {
-            const res = await fetch("http://localhost:5000/coffees", {
+            const res = await fetch("https://espresso-emporium-seven.vercel.app/coffees", {
                 method: "POST",
                 body: JSON.stringify(newCoffee),
                 headers: {

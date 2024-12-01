@@ -7,7 +7,7 @@ const CardLayout = () => {
 
     useEffect(() => {
         const fetchData = async() => {
-            const res = await fetch('http://localhost:5000/coffees');
+            const res = await fetch('https://espresso-emporium-seven.vercel.app/coffees');
             const data = await res.json();
             setCoffees(data);
         }

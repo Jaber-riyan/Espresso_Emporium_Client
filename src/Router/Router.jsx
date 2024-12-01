@@ -27,12 +27,12 @@ const router = createBrowserRouter([
         {
           path: '/view/:id',
           element: <PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>,
-          loader: ({params}) => fetch(`http://localhost:5000/coffees/${params.id}`)
+          loader: ({params}) => fetch(`https://espresso-emporium-seven.vercel.app/coffees/${params.id}`)
         },
         {
           path: '/updatecoffee/:id',
           element: <PrivateRoutes><UpdateCoffee></UpdateCoffee></PrivateRoutes>,
-          loader: ({params}) => fetch(`http://localhost:5000/coffees/${params.id}`)
+          loader: ({params}) => fetch(`https://espresso-emporium-seven.vercel.app/coffees/${params.id}`)
         },
         {
           path: '/login',
@@ -45,12 +45,12 @@ const router = createBrowserRouter([
         {
           path: '/users',
           element: <PrivateRoutes><Users></Users></PrivateRoutes>,
-          loader: ()=> fetch(`http://localhost:5000/users`)
+          loader: ()=> fetch(`https://espresso-emporium-seven.vercel.app/users`)
         },
         {
           path: '/update-user/:id',
           element: <PrivateRoutes><UpdateUser></UpdateUser></PrivateRoutes>,
-          loader: ({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+          loader: ({params}) => fetch(`https://espresso-emporium-seven.vercel.app/users/${params.id}`)
         },
         {
           path: '*',

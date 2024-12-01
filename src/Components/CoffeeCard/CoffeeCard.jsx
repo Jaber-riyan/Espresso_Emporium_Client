@@ -19,7 +19,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
                 confirmButtonText: "Yes, delete it!"
             }).then(async (result) => {
                 if (result.isConfirmed) {
-                    const res = await fetch(`http://localhost:5000/coffees/${id}`, {
+                    const res = await fetch(`https://espresso-emporium-seven.vercel.app/coffees/${id}`, {
                         method: 'DELETE',
                     });
                     const data = await res.json();

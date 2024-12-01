@@ -34,7 +34,7 @@ const UpdateCoffee = () => {
             confirmButtonText: "Yes, Update it!"
         }).then(async (result) => {
             if (result.isConfirmed) {
-                const res = await fetch(`http://localhost:5000/coffees/${_id}`, {
+                const res = await fetch(`https://espresso-emporium-seven.vercel.app/coffees/${_id}`, {
                     method: "PUT",
                     body: JSON.stringify(updateCoffee),
                     headers: {

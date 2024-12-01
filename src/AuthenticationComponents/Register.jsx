@@ -54,7 +54,7 @@ const Register = () => {
                 signOut(auth).then(result => { });
                 // save the user info into database 
                 const newUser = { name, email, photoURL, createdAt: result?.user?.metadata?.creationTime }
-                fetch(`http://localhost:5000/users`, {
+                fetch(`https://espresso-emporium-seven.vercel.app/users`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

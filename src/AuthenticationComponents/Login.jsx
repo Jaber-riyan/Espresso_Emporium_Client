@@ -48,7 +48,7 @@ const Login = () => {
                     title: "Successfully Login",
                     icon: "success"
                 });
-                fetch(`http://localhost:5000/users`,{
+                fetch(`https://espresso-emporium-seven.vercel.app/users`,{
                     method: 'PATCH',
                     headers: {
                         'content-type' : 'application/json'

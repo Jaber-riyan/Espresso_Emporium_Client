@@ -2,13 +2,20 @@ import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css'
 import { AuthContext } from '../../Authentication/Authentication';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
     const { user, handleLogout } = useContext(AuthContext);
     const handleLogoutUser = () => {
         handleLogout()
-        .then(res=>res.json())
-        .then(data=> console.log(data))
+            .then(res => res.json())
+            .then(data => {
+
+            })
+        Swal.fire({
+            title: "Successfully Logout",
+            icon: "success"
+        });
     }
     return (
         <div className="bg-[url('https://i.ibb.co.com/nrtLf7t/15.jpg')] md:px-7 p-2 flex justify-between items-center">
@@ -22,7 +29,7 @@ const Navbar = () => {
                     user ?
                         <>
                             <NavLink className="font-bold px-2 py-1 text-xs md:text-xl md:px-4 md:py-2 rounded-md hover:bg-[#423030] text-white bg-[#523939] mr-3" to={'/users'}>Users</NavLink>
-                            <NavLink className="font-bold px-2 py-1 text-xs md:text-xl md:px-4 md:py-2 rounded-md hover:bg-[#423030] text-white bg-[#523939]" onClick={handleLogoutUser}>Logout</NavLink>
+                            <Link className="font-bold px-2 py-1 text-xs md:text-xl md:px-4 md:py-2 rounded-md hover:bg-[#423030] text-white bg-[#523939]" onClick={handleLogoutUser}>Logout</Link>
                         </>
                         :
                         <>
